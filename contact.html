@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>Instytut Piękna</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="Author" content="Igor Rzegocki" />
+    <meta name="Copyright" content="Copyright (c) Instytut Piękna" />
+    <meta name="Robots" content="index, follow" />
+
+    <meta name="Revisit-after" content="7 days" />
+    <link href="css/ip.css" media="screen" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo"><a href="">Instytut Piękna</a></div>
+            <div class="menu">
+                <ul class="menu">
+                    <li><a href="start.html">O nas</a></li>
+                    <li><a href="offer/face.html">Oferta</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                    <li><a href="promotions.html">Promocje</a></li>
+                    <li class="selected"><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div class="content">
+                <div class="contactform">
+                    <form enctype="text/plain" action="mailto:recepcja@instytutpiekna.com" method="post">
+                        <fieldset>
+                            <input class="name empty" type="text" name="name" value="Imię i nazwisko" onfocus="if(this.value == 'Imię i nazwisko') { this.value = ''; this.className = 'name'; }" onblur="if(this.value == '') { this.value = 'Imię i nazwisko'; this.className = 'name empty'; }" />
+                            <input class="email empty" type="text" name="email" value="E-mail" onfocus="if(this.value == 'E-mail') { this.value = ''; this.className = 'email'; }" onblur="if(this.value == '') { this.value = 'E-mail'; this.className = 'email empty'; }" />
+                            <input class="phone empty" type="text" name="phone" value="Nr telefonu" onfocus="if(this.value == 'Nr telefonu') { this.value = ''; this.className = 'phone'; }" onblur="if(this.value == '') { this.value = 'Nr telefonu'; this.className = 'phone empty'; }" />
+                            <input class="subject empty" type="text" name="subject" value="Temat" onfocus="if(this.value == 'Temat') { this.value = ''; this.className = 'subject'; }" onblur="if(this.value == '') { this.value = 'Temat'; this.className = 'subject empty'; }" />
+                            <textarea name="content" class="content empty" onfocus="if(this.value == 'Treść wiadomości') { this.value = ''; this.className = 'content'; }" onblur="if(this.value == '') { this.value = 'Treść wiadomości'; this.className = 'content empty'; }">Treść wiadomości</textarea>
+                            <button class="submit" type="submit">Wyślij</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <h2>Kontakt</h2>
+                <p>Jeżeli mają Państwo jakiekolwiek pytania odnośnie naszych usług lub chcą umówić się na wizytę - prosimy o skorzystanie z
+                zamieszczonego obok formularza.</p>
+                <p>Możecie również Państwo skorzystać z kontaktów podanych poniżej. <strong>Zapraszamy!</strong></p>
+                <h4>Instytut Piękna</h4>
+                <address>Wysoka, ul. Radosna 8, 52-200 Wrocław</address>
+                <dl class="contact">
+                    <dt>tel:</dt>
+                    <dd>071 789 33 93</dd>
+                    <dt>tel. kom:</dt>
+                    <dd>
+                        <ul>
+                            <li>+48 723 698 950</li>
+                            <li>+48 695 391 491</li>
+                            <li>+48 604 149 945</li>
+                        </ul>
+                    </dd>
+                    <dt>email:</dt>
+                    <dd><a class="mail" href="mailto:recepcja@instytutpiekna.com">recepcja@instytutpiekna.com</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="footer">
+            <dl>
+                <dt><img src="img/footer1.jpg" alt="Bony" /></dt>
+                <dd>
+                    <h5>Bony</h5>
+                    <p>Krótki tekst zachęcający do zapoznania się z ofertą bonów</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="img/footer2.jpg" alt="Pakiety" /></dt>
+                <dd>
+                    <h5>Pakiety</h5>
+                    <p>Krótki tekst zachęcający do zapoznania się z ofertą pakietów1</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</body>
+</html>

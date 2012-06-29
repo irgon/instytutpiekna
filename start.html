@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>Instytut Piękna</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="Author" content="Igor Rzegocki" />
+    <meta name="Copyright" content="Copyright (c) Instytut Piękna" />
+    <meta name="Robots" content="index, follow" />
+
+    <meta name="Revisit-after" content="7 days" />
+    <link href="css/ip.css" media="screen" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/prototype.js"></script>
+    <script type="text/javascript" src="js/builder.js"></script>
+    <script type="text/javascript" src="js/effects.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo"><a href="">Instytut Piękna</a></div>
+            <div class="menu">
+                <ul class="menu">
+                    <li class="selected"><a href="start.html">O nas</a></li>
+                    <li><a href="offer/face.html">Oferta</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                    <li><a href="promotions.html">Promocje</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div class="content">
+                <ul class="bigphotos" id="bigphotos">
+                    <li><img src="img/about1.jpg" alt="O nas" title="O nas" /></li>
+                    <li style="display: none;"><img src="img/about2.jpg" alt="O nas" title="O nas" /></li>
+                    <li style="display: none;"><img src="img/about3.jpg" alt="O nas" title="O nas" /></li>
+                    <li style="display: none;"><img src="img/about4.jpg" alt="O nas" title="O nas" /></li>
+                    <li style="display: none;"><img src="img/about5.jpg" alt="O nas" title="O nas" /></li>
+                    <li style="display: none;"><img src="img/about6.jpg" alt="O nas" title="O nas" /></li>
+                </ul>
+                <h2>O nas</h2>
+                <p><strong>Instytut Piękna</strong> to przestrzeń pełna światła, rozkosznego ciepła, niezapomnianego zapachu i subtelnego dźwięku.
+                Uczucie odprężenia dla wszystkich zmysłów. Filizofia działania Instytutu Piękna oparta jest na ide wellness wyrażającej dążenie do
+                dobrego samopoczucia i zdrowia - harmonii między ciałem a umysłem.</p>
+                <p>Przywróć harmonię piękna swojej skórze. Podaruj jej skuteczną pielęgnację w Studio Laurel, które zapewnia najlepszą opiekę ze
+                strony świetnie wyszkolonego zespołu profesjonalistów.</p>
+                <p>Nasza wiedza to gwarancja najwyższej jakości wykonywanych usług oraz wyboru najskuteczniejszego programu indywidualnej 
+                pielęgnacji.</p>
+            </div>
+        </div>
+        <div id="footer">
+            <dl>
+                <dt><img src="img/footer1.jpg" alt="Bony" /></dt>
+                <dd>
+                    <h5>Bony</h5>
+                    <p>Krótki tekst zachęcający do zapoznania się z ofertą bonów</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="img/footer2.jpg" alt="Pakiety" /></dt>
+                <dd>
+                    <h5>Pakiety</h5>
+                    <p>Krótki tekst zachęcający do zapoznania się z ofertą pakietów1</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <script type="text/javascript">
+    //<![CDATA[
+        window.setInterval(function() {
+            visible = $('bigphotos').immediateDescendants().collect(function(elem) { return elem.visible() ? elem : null; }).compact().first();
+            next = visible.next() == null ? $('bigphotos').immediateDescendants().first() : visible.next();
+            new Effect.Fade(visible);
+            new Effect.Appear(next);
+        }, 4000);
+    //]]>
+    </script>
+</body>
+</html>

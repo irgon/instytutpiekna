@@ -1,0 +1,717 @@
+@font-face {
+    font-family: CataneoEU;
+    src: url("/fonts/cataneo.eot");
+}
+
+@font-face {
+    font-family: CataneoEU;
+    src: url("/fonts/cataneo.ttf");
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, button, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 14px;
+    line-height: 18px;
+    color: #311b10;
+    background: url(../img/bg.png) repeat;
+    line-height: 18px;
+}
+
+input, textarea {
+    color: #311b10;
+    font-size: 13px;
+    background: #ffffff;
+    padding: 6px 8px 5px 7px;
+    width: 250px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+input.empty,
+textarea.empty {
+    color: #8a693f;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a.mail,
+p strong {
+    color: #91d403;
+    font-weight: bold;
+}
+
+p em {
+    font-weight: bold;
+}
+
+html, body, #wrapper {
+    height: 100%;
+}
+
+#wrapper {
+    background: url(../img/tribal.png) no-repeat;
+    background-position: center top;
+}
+
+#header {
+    width: 960px;
+    padding: 90px 0 2px 0;
+    margin: 0 auto;
+    position: relative;
+    height: 48px;
+}
+
+#header #logo,
+#header #logo a {
+    display: block;
+    width: 172px;
+    height: 128px;
+}
+
+#header #logo {
+    position: absolute;
+    left: 0;
+    top: 32px;
+}
+
+#header #logo a {
+    background: url(../img/logo.png) no-repeat;
+    text-indent: -1000em;
+}
+
+#header div.menu {
+    height: 48px;
+    float: right;
+    background: #91d403;
+    width: 760px;
+}
+
+#header ul.menu {
+    float: right;
+}
+
+#header ul.menu li {
+    display: block;
+    float: left;
+    background: url(../img/menu-delimiter.png) no-repeat;
+    background-position: left top;
+    padding: 0 0 0 2px;
+}
+
+#header ul.menu li a {
+    display: block;
+    padding: 0 15px 0 13px;
+    height: 44px;
+    line-height: 44px;
+    border-top: solid 2px #91d403;
+    border-bottom: solid 2px #91d403;
+    font-family: CataneoEU, Verdana, sans-serif;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+#header ul.menu li.selected a,
+#header ul.menu li a:hover {
+    border-top-color: #ffffff;
+    color: #311b10;
+}
+
+#content {
+    background: url(../img/content.png) no-repeat;
+    background-position: center top;
+    padding: 40px 0;
+}
+
+div.big #content {
+    background: url(../img/content-bottom.png) no-repeat;
+    background-position: center top;
+    padding: 20px 0 0;
+}
+
+div.big #content div.inside {
+    background: url(../img/content-bottom.png) no-repeat;
+    background-position: center bottom;
+    padding: 0 0 20px;
+}
+
+div.big #content div.top {
+    background: url(../img/content-bg.png) repeat-y;
+    background-position: center top;
+    padding: 0;
+}
+
+div.big #content div.bottom {
+    background: url(../img/content-top.png) no-repeat;
+    background-position: center top;
+    padding: 20px 0 0;
+}
+
+div.big #content div.below {
+    padding: 0 0 36px;
+    background: url(../img/content-below.png) no-repeat;
+    background-position: center bottom;
+}
+
+#content div.content {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#content img.bigphoto,
+#content ul.bigphotos,
+#content ul.bigphotos li,
+#content ul.bigphotos li img,
+#content div.contactform {
+    width: 580px;
+    height: 310px;
+    display: block;
+    float: left;
+    margin: 0 20px 0 0;
+    position: relative;
+}
+
+#content ul.bigphotos {
+    background: #ffffff;
+}
+
+#content ul.bigphotos li {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: none;
+}
+
+#content ul.bigphotos li img {
+    margin: 0;
+    float: none;
+    position: static;
+}
+
+#content h2 {
+    padding: 0 0 3px 0;
+    font-family: CataneoEU, Arial, sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    color: #311b10;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+    line-height: normal;
+    overflow: hidden;
+}
+
+#content h3,
+#content h2 ul.submenu li a,
+#content h2 ul.submenu li a:hover,
+#content h2 ul.submenu li.selected a,
+#content h2 cite,
+#content h3.green cite {
+    font-family: CataneoEU, Arial, sans-serif;
+    color: #311b10;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+#content h3.green {
+    margin-bottom: 15px;
+}
+
+#content h3.green,
+#content h3.green cite {
+    color: #91d403;
+    line-height: normal;
+}
+
+#content h3.green cite {
+    font-size: 18px;
+}
+
+#content h2 ul.submenu {
+    float: right;
+}
+
+#content h2 ul.submenu li {
+    display: inline;
+}
+
+#content h2 ul.submenu li a {
+    color: #91d403;
+}
+
+#content h2 cite {
+    color: #91d403;
+}
+
+#content p {
+    margin: 10px 0 0;
+}
+
+#content div.contactform {
+    padding: 56px 20px 10px 20px;
+    width: 540px;
+    height: 244px;
+    background: #91d403 url(../img/contactform.png) no-repeat;
+    background-position: right 34px;
+}
+
+#content input.email {
+    clear: left;
+    margin: 0 10px 0 0;
+}
+
+#content input.phone {
+    margin: 0;
+}
+
+#content input.subject {
+    margin-top: 20px;
+}
+
+#content input.subject,
+#content textarea {
+    width: 525px;
+}
+
+#content textarea {
+    height: 75px;
+}
+
+#content button.submit {
+    width: 132px;
+    height: 30px;
+    float: right;
+    clear: left;
+    background: url(../img/submit.png) no-repeat;
+    text-indent: -1000em;
+    margin: 0 10px 0 0;
+}
+
+#content h4 {
+    color: #311b10;
+    margin: 10px 0 5px 0;
+    font-size: 16px;
+}
+
+dl.contact {
+    overflow: hidden;
+}
+
+dl.contact dt {
+    width: 60px;
+    text-align: right;
+    float: left;
+    clear: left;
+}
+
+dl.contact dd {
+    overflow: hidden;
+    padding: 0 0 0 3px;
+}
+
+dl.contact dd ul li {
+    white-space: nowrap;
+    list-style: none;
+}
+
+#content ul.subsubmenu {
+    padding: 36px 0 20px 20px;
+    background: #91d403;
+    float: left;
+    width: 200px;
+    margin: 0 20px 0 0;
+}
+
+#content ul.subsubmenu li {
+    list-style: none;
+}
+
+#content ul.subsubmenu li.selected {
+    margin: 0 -13px 0 0;
+    padding: 0 13px 0 0;
+    background: url(../img/subsubmenu-selected.gif) no-repeat;
+    background-position: right top;
+}
+
+#content ul.subsubmenu li.noarrow {
+    background: none;
+}
+
+#content ul.subsubmenu li.sub {
+    margin: 0 0 0 -12px;
+}
+
+#content ul.subsubmenu li.br {
+    margin: 0;
+}
+
+#content ul.subsubmenu li.sub,
+#content ul.subsubmenu li a {
+    display: block;
+    height: 23px;
+    line-height: 23px;
+    color: #311b10;
+    border-bottom: solid 1px #ffffff;
+}
+
+#content ul.subsubmenu li.selected a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#content ul.subsubmenu li.selected ul {
+    padding: 0 0 0 12px;
+}
+
+#content ul.subsubmenu li.sub,
+#content ul.subsubmenu li.selected ul li a {
+    border-bottom: solid 1px #311b10;
+}
+
+#content ul.subsubmenu li.sub,
+#content ul.subsubmenu li.selected ul li a {
+    color: #311b10;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#content ul.subsubmenu li.selected ul li.selected {
+    padding: 0 13px 0 0;
+}
+
+#content ul.subsubmenu li.selected ul li.selected a {
+    color: #ffffff;
+}
+
+#content ul.thumbs {
+    list-style: none;
+    width: 368px;
+    overflow: hidden;
+    margin: 0 0 0 -8px;
+    float: left;
+}
+ 
+#content ul.thumbs li,
+#content ul.thumbs li img,
+#content ul.thumbs li.prev a,
+#content ul.thumbs li.next a {
+    width: 86px;
+    height: 59px;
+    display: block;
+}   
+
+#content ul.thumbs li {
+    margin: 0 6px 6px 0;
+    float: left;
+}
+
+#content ul.thumbs li.prev,
+#content ul.thumbs li.next {
+    text-indent: -1000em;
+}
+
+#content ul.thumbs li.prev {
+    background: url(../img/thumb-prev.png) no-repeat;
+}
+
+#content ul.thumbs li.next {
+    background: url(../img/thumb-next.png) no-repeat;
+}
+
+img.goldwell {
+    width: 169px;
+    height: 34px;
+    display: block;
+    float: right;
+}
+
+img.opi,
+img.belter,
+img.payot,
+img.ericson {
+    width: 190px;
+    height: 52px;
+    display: block;
+    float: right;
+}
+
+img.belter {
+    height: 76px;
+}
+
+img.opi {
+    height: 188px;
+}
+
+#content div.left,
+#content div.right {
+    float: left;
+    width: 255px;
+    padding: 30px 0 0 0;
+}
+
+#content div.left {
+    margin: 0 10px 0 0;
+}
+
+#content ul.prices li {
+    overflow: hidden;
+    height: 23px;
+    line-height: 23px;
+    border-bottom: #b8d578 solid 1px;
+    padding: 0 0 0 11px;
+    background: url(../img/dot.gif) no-repeat;
+    background-position: left bottom;
+    list-style: none;
+}
+
+#content ul.prices li:first-child {
+    color: #311b10;
+    font-weight: bold;
+    border-bottom: #88ba1d solid 1px;
+    padding: 24px 0 0 0;
+    background: none;
+}
+
+#content ul.prices li dfn {
+    float: left;
+}
+
+#content ul.prices li cite {
+    float: right;
+    font-weight: normal;
+}
+
+#content ul.prices li cite span {
+    font-weight: bold;
+    font-size: 16px;
+    color: #91d403;
+}
+
+#content div.subfoot {
+    width: 572px;
+    height: 120px;
+    float: right;
+    clear: left;
+    overflow: hidden;
+    padding: 36px 0 0 0;
+}
+
+#content div.subfoot img {
+    height: 120px;
+    margin: 0 2px 0 0;
+    display: block;
+    float: left;
+}
+
+#wrapper #content div.content div.inside {
+    overflow: hidden;
+    background: none;
+    padding: 0;
+}
+
+#content div.inside h5 {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 25px 0 10px;
+}
+
+#content p.cut {
+    width: 525px;
+    overflow: hidden;
+}
+
+#content ul.pricelist + p {
+    margin-top: 0;
+}
+
+#content ul.biglist {
+    padding: 0 0 0 15px;
+    overflow: hidden;
+}
+
+#content ul.biglist li {
+    color: #91d403;
+}
+
+#content ul.biglist strong.big {
+    display: block;
+}
+
+#content ul.biglist p {
+    overflow: hidden;
+    width: 510px;
+    color: #311b10;
+}
+
+#content ul.pricelist,
+#content ul.pricelist2 {
+    width: 189px;
+    float: right;
+    padding: 0 0 0 1px;
+    clear: right;
+}
+
+#content ul.pricelist2 {
+    padding-bottom: 8px;
+}
+
+#content ul.pricelist li {
+    background: #91d403;
+    margin: 0 0 2px 0;
+    font-size: 12px;
+    padding: 0 15px 0;
+    overflow: hidden;
+    line-height: normal;
+}
+
+#content ul.pricelist li.top {
+    padding-top: 10px;
+}
+
+#content ul.pricelist2 li {
+    padding: 8px;
+    font-size: 12px;
+    overflow: hidden;
+    background: #91d403 url(../img/dfn2.png) no-repeat;
+    margin: 0 0 2px 0;
+    line-height: normal;
+}
+
+#content ul.pricelist2 li strong {
+    font-size: 16px;
+    font-weight: bold;
+    float: right;
+    display: block;
+    width: 65px;
+    text-align: right;
+}
+
+#content ul.pricelist2 li cite,
+#content ul.pricelist li cite {
+    color: #ffffff;
+    display: block;
+    font-size: 12px;
+}
+
+#content ul.pricelist li cite em,
+#content ul.pricelist2 li cite em {
+    font-weight: bold;
+    color: #311b10;
+}
+
+#content ul.pricelist dfn,
+#content ul.biglist dfn {
+    color: #311b10;
+    width: 155px;
+    height: 41px;
+    float: right;
+    display: block;
+    padding: 0 14px 0 20px;
+    background: url(../img/dfn.png) no-repeat;
+    background-position: left center;
+    font-weight: bold;
+    line-height: 41px;
+    font-size: 14px;
+}
+
+#content ul.pricelist dfn {
+    margin: 0 -15px;
+}
+
+#content ul.pricelist dfn {
+    height: 32px;
+    line-height: 32px;
+}
+
+#content ul.pricelist dfn cite,
+#content ul.biglist dfn cite {
+    color: #311b10;
+    float: right;
+    display: block;
+    font-size: 14px;
+}
+
+#content ul.list {
+    padding: 0 0 0 15px;
+    list-style: disc;
+}
+
+#content ul.list li em {
+    color: #91d403;
+}
+
+#content div.warning {
+    padding: 0 0 0 30px;
+    background: url(../img/warning.png) no-repeat;
+}
+
+#content div.warning p {
+    width: 495px;
+}
+
+#footer {
+    padding: 2px 0 52px 198px;
+    width: 762px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#footer dl {
+    float: left;
+    margin: 0 0 0 2px;
+    overflow: hidden;
+}
+
+#footer dl dt {
+    width: 190px;
+    height: 120px;
+    float: left;
+}
+
+#footer dl dt img {
+    display: block;
+    width: 190px;
+    height: 120px;
+}
+
+#footer dl dd {
+    height: 98px;
+    border-top: solid 2px #ffffff;
+    background: #91d403 url(../img/more.gif) no-repeat;
+    background-position: right bottom;
+    padding: 0 0 0 10px;
+    overflow: hidden;
+    width: 179px;
+    float: left;
+}
+
+#footer dl dd h5 {
+    font-family: CataneoEU, Arial, sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: normal;
+    line-height: normal;
+}
